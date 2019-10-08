@@ -119,7 +119,7 @@ ln -s $ENSEMBL_LINUXBREW_DIR/opt/emboss $SHARED_PATH/emboss
 ln -s $ENSEMBL_LINUXBREW_DIR/opt/genewise $SHARED_PATH/genewise
 ln -s $ENSEMBL_LINUXBREW_DIR/opt/jdk@8/bin/java $SHARED_PATH/java
 ln -s $ENSEMBL_LINUXBREW_DIR/opt/r2r/bin/r2r $SHARED_PATH/r2r
-ln -s $ENSEMBL_LINUXBREW_DIR/opt/perl/lib/perl5/site_perl/*/ $SHARED_PATH/bioperl
+ln -s $ENSEMBL_LINUXBREW_DIR/opt/bioperl-169/libexec $SHARED_PATH/bioperl
 ln -s $ENSEMBL_LINUXBREW_DIR/opt/htslib/include $SHARED_PATH/htslib
 ln -s $ENSEMBL_LINUXBREW_DIR/opt/kent/bin/gfClient $SHARED_PATH/gfClient
 ln -s $ENSEMBL_LINUXBREW_DIR/opt/blast/bin $SHARED_PATH/ncbi-blast
