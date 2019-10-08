@@ -133,7 +133,7 @@ export SHARED_PATH="$ENSEMBL_SOFTWARE_DEPENDENCIES_DIR/paths"
 export HOMEBREW_ENSEMBL_MOONSHINE_ARCHIVE="$ENSEMBL_SOFTWARE_DEPENDENCIES_DIR/ENSEMBL_MOONSHINE_ARCHIVE"
 
 #Add bioperl to PERL5LIB
-export PERL5LIB="\$PERL5LIB:$ENSEMBL_LINUXBREW_DIR/opt/bioperl-169/libexec"
+export PERL5LIB="\$PERL5LIB:$ENSEMBL_LINUXBREW_DIR/opt/bioperl-169/libexec" ### nickl: is this still needed after fixing the bioperl symlink? https://github.com/Ensembl/linuxbrew-automation/commit/473661d10f1d0183b05f4ce94b7049ea6d050b2a
 
 # Setup Perl library dependencies
 export HTSLIB_DIR="$ENSEMBL_LINUXBREW_DIR/opt/htslib"
