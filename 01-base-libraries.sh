@@ -255,15 +255,15 @@ brew tap denji/nginx
 
 ###################### FREEZE BREW AND HOMEBREW CORE FOR RELEASE 95 TO AVOID SURPRISES IN CASE USERS WANT TO BUILD THEIR OWN IMAGES ################################
 
-pushd $ENSEMBL_LINUXBREW_DIR
-git checkout 9769fb22fe2cef2dc00420111fd4ecf5b19e5c0d
-popd
+#pushd $ENSEMBL_LINUXBREW_DIR
+#git checkout 9769fb22fe2cef2dc00420111fd4ecf5b19e5c0d
+#popd
 
 
-pushd "$(brew --repo homebrew/core)"
-git fetch --unshallow
-git checkout c7e37d57f0655d422f9a6eb2d225836bca3d7cfa
-popd
+#pushd "$(brew --repo homebrew/core)"
+#git fetch --unshallow
+#git checkout c7e37d57f0655d422f9a6eb2d225836bca3d7cfa
+#popd
 
 ###################################################################################################################
 
@@ -274,9 +274,9 @@ popd
 ###################### TEMP SOLUTION UNTIL DECISION ON UPGRADING HDF5 VERSION IS MADE ################################
 
 brew tap ensembl/ensembl --full
-cd $(brew --repository ensembl/ensembl)
-git checkout feature/hdf5@1.8.20
-cd -
+#cd $(brew --repository ensembl/ensembl)
+#git checkout feature/hdf5@1.8.20
+#cd -
 
 ############################################################################################################
 
