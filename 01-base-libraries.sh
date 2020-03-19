@@ -229,7 +229,9 @@ fi
 
 
 print_this "Clonning linuxbrew into $ENSEMBL_LINUXBREW_DIR"
-git clone https://github.com/Linuxbrew/brew.git $ENSEMBL_LINUXBREW_DIR
+#git clone https://github.com/Linuxbrew/brew.git $ENSEMBL_LINUXBREW_DIR
+ yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)" \
+	&& brew config
 
 
 print_this "Turning off brew analytics"
