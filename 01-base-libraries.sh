@@ -313,7 +313,7 @@ time brew install ensembl/cask/web-libsforcpanm
 # This is a hack to save build time while installing additional libs in ensembl-web-02 dockerfile.
 if [ ! -z "$IS_A_DOCKER_INSTALL" ]; then
   time brew install ensembl/external/emboss
-  time brew install ensembl/ensembl/hdf5
+  time brew install homebrew/science/hdf5
 fi
 
 
