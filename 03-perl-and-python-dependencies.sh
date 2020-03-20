@@ -25,6 +25,10 @@ function install_perl_modules {
 
    # Install Ensembl Perl module dependencies
    brew install cpanm
+   time cpanm Sys::Hostname::Long
+   time cpanm DBD::mysql
+   time cpanm Apache2::RequestUtil
+
    time cpanm --installdeps --with-recommends --notest --cpanfile cpanfile .
 
 
