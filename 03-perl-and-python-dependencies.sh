@@ -24,6 +24,7 @@ function install_perl_modules {
    sed -i '/Bio::DB::BigFile/d' cpanfile 
 
    # Install Ensembl Perl module dependencies
+   brew install cpanm
    time cpanm --installdeps --with-recommends --notest --cpanfile cpanfile .
 
 
